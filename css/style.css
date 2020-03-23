@@ -1,4 +1,57 @@
+/*---------------*/
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.background_color_form-color {
+  background-color: #ba0000;
+}
+
+/*---------------*/
+.pre-header {
+  justify-content: flex-end;
+}
+.pre-header .pre-header__lang, .pre-header .pre-header__contact, .pre-header .pre-header__profile {
+  font-size: 14px;
+  color: #ffffff;
+  padding: 17px 0;
+  text-decoration: none;
+}
+.pre-header .pre-header__lang {
+  margin-right: auto;
+}
+.pre-header .pre-header__contact {
+  margin-right: 30px;
+  position: relative;
+}
+.pre-header .pre-header__contact:before {
+  content: "";
+  background-image: url(../images/chat.svg);
+  background-size: 15px 15px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -20px;
+}
+.pre-header .pre-header__lang:after, .pre-header .pre-header__profile:after {
+  content: url(../images/down-arrow.svg);
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 7px;
 }
